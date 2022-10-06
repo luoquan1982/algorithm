@@ -8,11 +8,11 @@ public class Fiboracci {
         long first = 1;
         long second = 1;
         if (n <= 0) {
-            throw new IllegalArgumentException("值不能小于零");
+            throw new IllegalArgumentException("值不能小于或等于零");
         } else if (2 == n) {
-            return first;
-        } else if (1 == n) {
             return second;
+        } else if (1 == n) {
+            return first;
         }
 
         for (int i = 0; i < n - 2; i++) {
